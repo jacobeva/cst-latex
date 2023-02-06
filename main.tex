@@ -23,7 +23,14 @@
 \usepackage[left=3cm,right=3cm]{geometry}
 %\usepackage{fontspec} % uncomment this and the font section if you would like to set a custom font
 
+\usepackage{natbib}
+\usepackage{bibentry}
+
+
 % Config
+\usepackage{caption}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \graphicspath{ {./images/} }
 
 % Font
@@ -107,6 +114,8 @@ autonomously. Making use of our state-of-the-art dedicated labs, you will
 be able to put theory into practice and gain the skills you need to succeed
 in an evolving digital world.
 
+Citation test \cite{JenkinsAndAngel2006} and another \citep{JenkinsAndAngel2006}.
+
 \section{Lecturers}
 You will be taught by academics and practitioners, who will provide insights
 into their research and enterprise activity. Through guest lectures from
@@ -125,5 +134,13 @@ part in our practical industry-based Hackathons. Additionally, we work
 closely with our international academic partners to offer you
 opportunities to study and work abroad.
 
+%Choose a bibliograhpic style
+ \bibliographystyle{agsm}
+
+
+
+%Add section for Refs, this avoids having an extra section heading for Refs in your report. 
+\addcontentsline{toc}{section}{References}
+\bibliography{References}
 
 \end{document}

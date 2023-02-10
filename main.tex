@@ -18,12 +18,17 @@
 \documentclass{article}
 
 % Packages
-\usepackage{tabularx}
-\usepackage{graphicx}
-\usepackage[left=3cm,right=3cm]{geometry}
+\usepackage{tabularx} % for pretty tables
+\usepackage{graphicx} % for displaying images
+\usepackage[left=3cm,right=3cm]{geometry} % for custom page margin
 %\usepackage{fontspec} % uncomment this and the font section if you would like to set a custom font
+\usepackage{natbib} % for managing bibliographies
+\usepackage{bibentry} % allows inserting entries in text
+\usepackage{caption} % captions for images
+
 
 % Config
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.eps}
 \graphicspath{ {./images/} }
 
 % Font
@@ -105,7 +110,7 @@ career shaping the future of technology. From day one, you will be
 encouraged to adopt a growth mindset, strengthening your ability to learn
 autonomously. Making use of our state-of-the-art dedicated labs, you will
 be able to put theory into practice and gain the skills you need to succeed
-in an evolving digital world.
+in an evolving digital world. \cite{JenkinsAndAngel2006}
 
 \section{Lecturers}
 You will be taught by academics and practitioners, who will provide insights
@@ -115,7 +120,7 @@ assessments, our network of experts will bring specialist knowledge and best
 practices to the classroom. Furthermore, many of our programmes are integrated
 with professional certification contents such as SAS, Tableau, Cisco and
 Certified Ethical Hacking (CEH), to give you an edge in today’s competitive job
-market. 
+market. \citep{JenkinsAndAngel2006}
 
 \section{Industry experience}
 To strengthen the bond with employers, all degrees give you the
@@ -125,5 +130,13 @@ part in our practical industry-based Hackathons. Additionally, we work
 closely with our international academic partners to offer you
 opportunities to study and work abroad.
 
+%Choose a bibliograhpic style
+ \bibliographystyle{agsm}
+
+
+
+%Add section for Refs, this avoids having an extra section heading for Refs in your report. 
+\addcontentsline{toc}{section}{References}
+\bibliography{References}
 
 \end{document}

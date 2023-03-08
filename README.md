@@ -1,4 +1,7 @@
-# CST LaTeX template
+# CST LaTeX template - DEPRECATED
+
+Please find my self hosted version [here](https://git.jacobeva.co.uk/jacob.eva/cst-latex).
+
 I wrote this template for CST students who want to be able to avoid using Word
 when writing their assignments.
 
